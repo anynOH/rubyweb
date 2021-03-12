@@ -11,4 +11,11 @@ configure :production, :development do
 			:database => db.path[1..-1],
 			:encoding => 'utf8'
 	)
+
+    
+    #ActiveRecord::Migration.class_eval do
+    #    create_table :items do |item|
+    #          item.string  :name
+    #     end
+    #end
 end

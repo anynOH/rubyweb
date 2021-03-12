@@ -14,7 +14,7 @@ get '/' do
 end
 
 post '/submit' do
-	@item = Item.new(params[:name])
+	@item = Item.new(params[:item])
 	if @item.save
 		redirect '/models'
 	else
